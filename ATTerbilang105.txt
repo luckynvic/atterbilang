@@ -1,0 +1,36 @@
+AriTech Development Component Readme
+--------------------------------------------------
+Component Name    : ATTerbilang
+Version           : 1.05
+Programmer        : Sony Arianto K
+Copyright         : Copyright © June, 1998 AriTech Development
+For Delphi        : 2.0 ; 3.0
+Source            : Available
+Demo              : Not available
+Purpose           : Berguna untuk aplikasi keuangan seperti penulisan terbilang pada
+                    kuitansi, slip bukti pembayaran dan sebagainya. Component akan
+                    menerjemahkan bilangan yang Anda masukkan ke dalam terbilang dalam bahasa
+                    Indonesia. Cth. 125 akan diterjemahkan jadi 'seratus dua puluh lima'
+Properties        : - Author : string : read-only = default property for all of my component
+                    - Number : integer : read-write = property yang menampung bilangan yang akan diterjemahkan 
+                      menjadi terbilang
+                    - Terbilang : string : read-only = property yang menampung hasil terjemahan dari property Number
+Methods           : none
+Events            : none
+Component Type    : Invisible
+Ancestor          : TComponent
+Usage Example     : Misal Anda akan menerjemahkan 3456 maka tulis kode berikut
+                    ...
+                    var
+                      Angkanya : string;
+                    begin
+                      ATTerbilang.Number :=3456;
+                      Angkanya :=ATTerbilang.Terbilang; { hasilnya akan 'tiga ribu empat ratus lima puluh enam'}
+                    end;
+                    ...
+
+Sony Arianto K
+sony-ak@programmer.net
+http://www.geocities.com/Pentagon/5900/
+Executive Programmer at AriTech Development
+

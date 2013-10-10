@@ -1,0 +1,8 @@
+*.~pas
+*.dcu
+*.res*
+*.dof
+*.cfg
+*.2007
+*.local
+__history/*.*
