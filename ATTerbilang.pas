@@ -16,7 +16,8 @@ unit ATTerbilang;
 interface
 
 uses
-  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs;
+  Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+  Math;
 
 type
   TATTerbilang = class(TComponent)
@@ -167,7 +168,7 @@ begin
   if value <> FValue then
   begin
     FValue := value;
-    FDecimal := round(frac(value) * (FDecimalNumber * 10));
+    FDecimal := round(frac(value) * (power(10, FDecimalNumber)));
     FNumber := trunc(value);
   end;
 end;

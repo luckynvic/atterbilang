@@ -16,6 +16,6 @@ Angkanya : string;
      ATTerbilang.DecimalNumber := 2;
      ATTerbilang.Value := 123.45;
 	
-     Angkanya :=ATTerbilang.Terbilang; { hasilnya akan 'sertaus dua puluh tiga koma empat lima'}
+     Angkanya :=ATTerbilang.Terbilang; { hasilnya akan 'seratus dua puluh tiga koma empat lima'}
     end;
 ```
